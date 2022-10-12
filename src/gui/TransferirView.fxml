@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="358.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TransferirViewController">
+   <children>
+      <Label layoutX="156.0" layoutY="22.0" text="Transferência">
+         <font>
+            <Font name="Arial Black" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="77.0" text="Digite os cpf das contas que deseja realizar a transferência">
+         <font>
+            <Font name="Century" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="131.0" text="De:">
+         <font>
+            <Font name="Century" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="187.0" text="Para:">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fildDe" layoutX="135.0" layoutY="130.0" prefHeight="25.0" prefWidth="261.0" />
+      <TextField fx:id="fildPara" layoutX="135.0" layoutY="187.0" prefHeight="25.0" prefWidth="261.0" />
+      <Button fx:id="btTransferir" layoutX="424.0" layoutY="301.0" mnemonicParsing="false" onAction="#onBtTransferir" text="Transferir" />
+      <Button fx:id="btCancelar" layoutX="340.0" layoutY="301.0" mnemonicParsing="false" onAction="#onBtCancelar" text="Cancelar" />
+      <Label layoutX="68.0" layoutY="244.0" text="Valor:">
+         <font>
+            <Font name="Century" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fildValor" layoutX="135.0" layoutY="244.0" prefHeight="25.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>
